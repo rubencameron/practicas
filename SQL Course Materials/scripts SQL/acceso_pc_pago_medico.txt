@@ -1,0 +1,2 @@
+pc pago medico: 192.168.254.145 
+contraseña :    123456

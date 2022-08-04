@@ -1,0 +1,295 @@
+pacsnuevo = 
+ (DESCRIPTION= 
+   (ADDRESS=(PROTOCOL=TCP)(HOST=192.168.0.108)(PORT=1525))
+   (CONNECT_DATA= 
+     (SERVICE_NAME=cdb1.dcaslcsr01.local))) 
+
+testlab = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.204)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = testlab)
+    )
+  )
+
+testssrsr = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.204)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = testssrsr)
+    )
+  )
+
+testssrlc = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.204)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = testssrlc)
+    )
+  )
+
+testasmlc = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.204)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = testasmlc)
+    )
+  )
+
+testasm = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.204)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = testasm)
+    )
+  )
+
+wels = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 186.16.41.5)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = dbprod)
+    )
+  )
+pacsorcl = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.9.200.40)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = pacsorcl)
+    )
+  )
+
+
+asm_des = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.10.200)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = asismed)
+    )
+  )
+
+
+dig = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.10)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = orcl)
+    )
+  )
+
+tel = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.80)
+          (Port = 1522)
+        )
+    )
+    (CONNECT_DATA = (SID = orcl)
+    )
+  )
+
+
+web = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.150)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = webdb)
+    )
+  )
+
+asm = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.165)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = asm)
+    )
+  )
+
+
+1 = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.165)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = asm)
+    )
+  )
+
+
+2 = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.166)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = lab)
+    )
+  )
+
+
+3 = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.10.150)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = frm)
+    )
+  )
+
+
+lab = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.166)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = lab)
+    )
+  )
+
+
+asmlc = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.164)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = asmlc)
+    )
+  )
+
+
+ssr_lc = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.164)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = ssr1b)
+    )
+  )
+
+
+ssr_sr = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.166)
+          (Port = 1521)
+        )
+    )
+    (CONNECT_DATA = (SID = ssr1b)
+    )
+  )
+
+oradw = 
+  (DESCRIPTION = 
+    (ADDRESS_LIST = 
+        (ADDRESS = 
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 192.168.0.9)
+          (Port = 1522)
+        )
+    )
+    (CONNECT_DATA = (SID = xe)
+    )
+  )
+

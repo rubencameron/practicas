@@ -1,0 +1,29 @@
+
+SELECT *
+FROM   anamnesis.DDL_EVENTS_SQL
+WHERE  UPPER(SQLTEXT) LIKE '%%'
+ORDER BY 1 DESC						;
+
+
+SELECT *
+FROM   anamnesis.DDL_EVENTS
+WHERE eventid  =   535929
+order by 2 desc
+
+
+
+
+select *
+from persona
+where usuario = 'LOPEZAL'
+
+
+
+select *
+from persona
+where usuario = 'GOMEZ'
+
+
+SELECT *
+FROM ANAMNESIS.PERSONA_RRHH_JN
+WHERE USUARIO = 'GOMEZ'

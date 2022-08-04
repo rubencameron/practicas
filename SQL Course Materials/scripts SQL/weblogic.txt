@@ -1,0 +1,50 @@
+/u01/app/oracle/Middleware/Oracle_Home/forms/ANAMNESIS
+(10:17:45 a. m.) 
+
+EXECUTE_TRIGGER('KEY-EXEQRY');
+EXECUTE_TRIGGER('KEY-ENTQRY');
+EXECUTE_TRIGGER('KEY-NXTREC');
+EXECUTE_TRIGGER('KEY-PRVREC');
+EXECUTE_TRIGGER('KEY-CREREC');
+EXECUTE_TRIGGER('KEY-DELREC');
+EXECUTE_TRIGGER('KEY-COMMIT');
+EXECUTE_TRIGGER('KEY-EXIT');
+77 83
+
+LLAMADOR_DE_REPORTES(V_REPORTE,pl_id);
+
+-----------
+V_REPORT_ID REPORT_OBJECT; 
+
+V_REPORT_ID := find_report_object('REPORTE');
+if ID_NULL (GET_PARAMETER_LIST('nullparamlist')) = FALSE then
+   DESTROY_PARAMETER_LIST('nullparamlist');
+end if;              
+
+SET_REPORT_OBJECT_PROPERTY(V_REPORT_ID,REPORT_DESFORMAT,'PDF'); 
+SET_REPORT_OBJECT_PROPERTY(V_REPORT_ID,REPORT_DESFORMAT,'DELIMITEDDATA');
+
+
+ALTER TABLE ANAMNESIS.EVOLUCION_MEDICA_ESTUDIO ADD EAB_ID_EVOLUCION NUMBER(20);
+ALTER TABLE ANAMNESIS.EVOLUCION_MEDICA_ESTUDIO_JN ADD EAB_ID_EVOLUCION NUMBER(20);
+-------------
+ALTER TABLE anamnesis.EVOLUCION_MEDICA_ESTUDIO MODIFY EMA_ID_EVOLUCION NUMBER(20);  
+ALTER TABLE anamnesis.EVOLUCION_MEDICA_ESTUDIO_JN MODIFY EMA_ID_EVOLUCION NUMBER(20) NULL;
+-------------
+ALTER TABLE anamnesis.EVOLUCION_AMB ADD  HORA_A_REALIZAR DATE;
+ALTER TABLE anamnesis.EVOLUCION_AMB_JN ADD  HORA_A_REALIZAR DATE;
+-------------
+
+ALTER TABLE anamnesis.evolucion_medica_estudio
+  ADD CONSTRAINT eme_eab_fk FOREIGN KEY (
+    eab_id_evolucion
+  ) REFERENCES anamnesis.evolucion_amb (
+    id_evolucion
+  )
+/
+
+
+Observacion: Para pedido diferente a ambulatorio, muestra Pendiente y facturar 'SI' al grabar automacticamente pasará a facturar 'NO'
+
+
+con respecto a aplicar que facturar los pendientes a pacientes internados el Lic Amir estara remitiendo en otro correo como se procedera en este caso 
