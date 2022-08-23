@@ -30,12 +30,12 @@ if(question1 == `YES`){
         document.write(`I've read these: ` + otrosComics);
         }
     document.write('<br>' + '<br>' + 
-    `<strong>Esto imprime pase lo que pase xd</strong>`);
+    `<strong>Esto imprime pase lo que pase</strong>`);
 
-    alert("Tambien vas a mostrar esto xd")
+    alert("Esto tambien se imprimira")
         
 }else{
-    document.write(`fuck`);
+    document.write(`De acuerdo`);
 }
 
 
