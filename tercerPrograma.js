@@ -32,7 +32,7 @@ if(question == `si`){
 }else if(question == `puede ser` || question == `tal vez`){
     alert(`oki doki xd`);
 }else if(question == `mejor quiero un bucle`){
-    alert(`aca tenes tu bucle mi REY`);
+    alert(`aqui tienes tu bucle`);
     for(let i=1; i<5; i++){
         document.write(`Este es tu bucle` + '<br>');
     }

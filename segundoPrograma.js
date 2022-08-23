@@ -33,7 +33,7 @@ for(let comic of otrosComics){
     document.write(comic + "<br>");
     if(comic == `Concrete`){
         for(let i = 1; i<=5; i++){
-            document.write(`Ojala funcione XD` + "<br>");
+            document.write(`Repeticion` + "<br>");
         }
     }else{
         document.write(`YUU` + "<br>");

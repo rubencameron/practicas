@@ -36,7 +36,7 @@ else if(dineroCofla >= 2.9){
 } 
 
 else{
-    alert("lo siento, pobre de mierda, no te alcanza");
+    alert("lo siento, no te alcanza");
      alert("y te sobran" + (dineroCofla - 0.6));
 }
 
