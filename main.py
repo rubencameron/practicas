@@ -1,5 +1,5 @@
 
-# Repaso a toda puta de python
+# Repaso rapido de python
 
 print("Hola mundillo")
 
@@ -16,9 +16,9 @@ nombre = "Ruben"
 altura = "173"
 year = 2022
 
-var = "tembo"
+var = "practica"
 
-print("Anive nde " + var)
+print("Esta es tu " + var)
 
 print('Mi nombre es ' + nombre + ' y tengo '
     + altura + ' cm de altura ' +
